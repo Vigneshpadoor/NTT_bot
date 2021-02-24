@@ -129,7 +129,7 @@ while True:
 		## This is safety timeout, if there is data piling somewhere, we quickly set STR and THR to 0.0
 		last_got_period = time.time() - got_data_time
 		if (last_got_period > 0.5) and (STR_val != 0 or THR_val != 0):
-			print("DANGER...gamepad data is piling... STR was {:} THR was {:}".format(STR_val,THR_val))
+			print("DANGER...gamepad data is piling... with period {:} STR was {:} THR was {:}".format(last_got_period,STR_val,THR_val))
 			STR_val = 0.0
 			THR_val = 0.0
 			sbus_throttle = sbus_mid
@@ -149,7 +149,7 @@ while True:
 
 
 
-	time.sleep(0.0001)
+	time.sleep(0.001)
 
 
 

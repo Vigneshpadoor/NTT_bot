@@ -22,7 +22,6 @@ if CONSOLE_PORT is None:
 ###################################SOCKET #############################################
 
 SLU_FB_PORT = 8888
-JETSON_IP = "192.168.8.26"
 slu_fb_sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 slu_fb_sock.bind(("0.0.0.0", SLU_FB_PORT))
 slu_fb_sock.setblocking(0)

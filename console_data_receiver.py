@@ -53,9 +53,9 @@ def gamepad_receive_worker(GAMEPAD_PORT):
 				### send to moab process ###
 				############################
 				## send only whenever data got changed
-				if (prev_moab_str != moab_cmd_data["STR_VAL"]) or (prev_moab_thr != moab_cmd_data["THR_VAL"]):
-					moab_cmd_packets = pickle.dumps(moab_cmd_data)
-					moab_console_sock.sendto(moab_cmd_packets,("127.0.0.1",MOAB_CONSOLE_PORT))
+				# if (prev_moab_str != moab_cmd_data["STR_VAL"]) or (prev_moab_thr != moab_cmd_data["THR_VAL"]):
+				moab_cmd_packets = pickle.dumps(moab_cmd_data)
+				moab_console_sock.sendto(moab_cmd_packets,("127.0.0.1",MOAB_CONSOLE_PORT))
 
 				#########################################
 				### send to SLU camera lifter process ###
