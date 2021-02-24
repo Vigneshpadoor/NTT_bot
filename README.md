@@ -13,6 +13,10 @@ Once we change the mode on KO-Propo to Auto, all of throttle. steering, and came
 
 ![](images/gamepad.jpeg) 
 
+The camera position can also be controlled by the buttons in the console. There are 3 buttons on left side of the console page to select the speed of the camera, and the right side contains a slider option on which the desired position of the camera can be chosen.
+
+![](images/console.jpeg) 
+
 
 ## Jetson Nano
 The software architecture of this robot is shown here
